@@ -1,0 +1,92 @@
+@import './text-glitch.css';
+
+:root {
+  --te-gold-gradient: linear-gradient(to right, #fedb37, #fdb931, #9f7928, #8a6e2f, #fedb37);
+  --te-bronze-gradient: linear-gradient(to right, #ffdeca, #ca7345, #a14521, #732100, #ffdeca);
+  --te-silver-gradient: linear-gradient(to right, #fff, #555, #555, #555, #fff);
+  --te-rainbow-gradient: linear-gradient(
+    to right,
+    rgb(252, 104, 110),
+    rgb(255, 255, 110),
+    rgb(155, 255, 110),
+    rgb(252, 102, 255),
+    rgb(153, 100, 255),
+    rgb(114, 255, 255),
+    rgb(252, 104, 110)
+  );
+  --te-magic-gradient: linear-gradient(
+    to right,
+    rgb(123, 31, 162),
+    rgb(103, 58, 183),
+    rgb(244, 143, 177),
+    rgb(123, 31, 162)
+  );
+}
+
+@keyframes te-move-bg {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes te-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: var(--te-blink-opacity, 0);
+  }
+}
+.te-blink {
+  animation: te-blink var(--te-blink-speed, 1s) steps(1, end) infinite;
+}
+
+.te-gold,
+.te-gold-bg {
+  background: var(--te-gold-gradient);
+}
+
+.te-silver,
+.te-silver-bg {
+  background: var(--te-silver-gradient);
+}
+
+.te-bronze,
+.te-bronze-bg {
+  background: var(--te-bronze-gradient);
+}
+
+.te-rainbow,
+.te-rainbow-bg {
+  background: var(--te-rainbow-gradient);
+}
+
+.te-magic,
+.te-magic-bg {
+  background: var(--te-magic-gradient);
+}
+
+.te-gold,
+.te-silver,
+.te-bronze,
+.te-rainbow,
+.te-magic {
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: te-move-bg 3s linear infinite reverse;
+}
+
+.te-gold-bg,
+.te-silver-bg,
+.te-bronze-bg,
+.te-rainbow-bg,
+.te-magic-bg {
+  background-size: 200%;
+  animation: te-move-bg 3s linear infinite reverse;
+}
