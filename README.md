@@ -30,3 +30,4 @@
 - [ ] Custom Prefix
 - [ ] TeMagic component refactoring
 - [ ] division into core and vue packages
+- [ ] hello world
