@@ -1,8 +1,27 @@
 {
-  "name": "text-effects",
+  "name": "@putana/text-effects",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/putana0/text-effects"
+  },
+  "homepage": "https://github.com/putana0/text-effects",
+  "keywords": [
+    "vue",
+    "effects",
+    "text",
+    "animation"
+  ],
+  "license": "ISC",
+  "files": [
+    "packages"
+  ],
+  "exports": {
+    ".": "./packages/index.ts",
+    "./text-effects.css": "./packages/css/text-effects.css"
+  },
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
@@ -12,13 +31,13 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
   },
-  "dependencies": {
-    "@tailwindcss/vite": "^4.1.14",
-    "@vueuse/core": "^13.9.0",
-    "tailwindcss": "^4.1.14",
+  "peerDependencies": {
     "vue": "^3.4.29"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "^4.1.14",
+    "@vueuse/core": "^13.9.0",
+    "tailwindcss": "^4.1.14",
     "@rushstack/eslint-patch": "^1.8.0",
     "@tsconfig/node20": "^20.1.4",
     "@types/node": "^20.14.5",
