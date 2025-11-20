@@ -1,5 +1,5 @@
 @import 'tailwindcss';
-@import '../../packages/css/text-effects.css';
+@import '../../packages/css/text-enchantment.css';
 @plugin "daisyui";
 
 h1 {

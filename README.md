@@ -1,4 +1,4 @@
-# text-effects
+# text-enchantment
 
 ```html
 <h2>Class</h2>

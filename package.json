@@ -21,7 +21,7 @@
   ],
   "exports": {
     ".": "./packages/index.ts",
-    "./text-effects.css": "./packages/css/text-effects.css"
+    "./text-enchantment.css": "./packages/css/text-enchantment.css"
   },
   "scripts": {
     "dev": "vite",
