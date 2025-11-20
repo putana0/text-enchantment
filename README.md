@@ -23,11 +23,10 @@
 </div>
 ```
 
-![example](./public/example.gif)
+![example](./example.gif)
 
 ## TODO
 
 - [ ] Custom Prefix
 - [ ] TeMagic component refactoring
 - [ ] division into core and vue packages
-- [ ] hello world
