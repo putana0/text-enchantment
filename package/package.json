@@ -1,0 +1,38 @@
+{
+  "name": "text-enchantment",
+  "version": "0.0.2",
+  "private": false,
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/putana0/text-enchantment"
+  },
+  "homepage": "https://github.com/putana0/text-enchantment",
+  "keywords": [
+    "vue",
+    "text",
+    "effects",
+    "enchantment",
+    "animation"
+  ],
+  "license": "ISC",
+  "files": [
+    "src"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./text-enchantment.css": "./src/css/text-enchantment.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build --force",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "format": "prettier --write src/"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.29"
+  }
+}

@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { TeJump, TeShake, TeMagic } from '../packages'
+import { TeJump, TeShake, TeMagic } from 'text-enchantment'
 </script>
 
 <template>
   <div class="container mx-auto px-2">
-    <h1 class="uppercase">text effects</h1>
+    <h1 class="uppercase">text enchantment</h1>
   </div>
 
   <div class="container mx-auto px-2 mb-3">
